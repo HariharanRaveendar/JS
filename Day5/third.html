@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Upgrade</title>
+</head>
+<body>
+    <script>
+        var random = Math.round(Math.random() * 200 + 1);
+        fetch('https://jsonplaceholder.typicode.com/todos/' + random)
+            .then(response => response.json())
+            .then(json => console.log(json))
+    </script>    
+</body>
+</html>
